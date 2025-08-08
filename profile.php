@@ -23,7 +23,13 @@
         $description = $row["Description"];
         $url = $row["URL"];
         $username = $row["Username"];
-        $post = "<div class = 'card col-md-4'><img class = 'card-img-top' src = '$url' alt = '$url'><div class = 'card-body'>$description</div><div class = 'card-footer'>$username</div></div>"; ?>
+        $post = "<div class = 'card col-md-4'>".
+            "<img class = 'card-img-top' src = '$url' alt = '$url'>".
+            "<div class = 'card-body'>$description</div>".
+            "<div class = 'card-footer w-100'>".
+                "<div class = 'd-flex justify-content-between'>".
+                    "<span>$username</span><a href = 'delete_post.php?url=$url'><span class = 'material-symbols-rounded' style = 'color: red'>delete_forever</span></a>".
+                "</div></div></div>"; ?>
         <script>
             document.getElementById("posts_area").innerHTML += "<?php echo $post; ?>";
         </script>

@@ -15,7 +15,7 @@
         $description = $_REQUEST["add_post_description"];
         $connection->query("insert into posts(Description, Username) values (\"$description\", \"$username\");");
         $id = $connection->query("select ID from posts order by ID desc limit 1;")->fetch_assoc()["ID"];
-        $target_file = "posts/post_".$id."_".basename($_FILES["add_post_file"]["name"]);
+        $target_file = "posts/post_".$id."_".$username;
         $connection->query("update posts set URL = \"$target_file\" where ID = \"$id\"");
         if (move_uploaded_file($_FILES["add_post_file"]["tmp_name"], $target_file)) {
             $_SESSION["toast_message"] = "Added Post Successfully";
