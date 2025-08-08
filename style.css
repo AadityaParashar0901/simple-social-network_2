@@ -3,12 +3,36 @@
 }
 body {
     background-image: url('images/background.png');
+    background-position: center;
+    background-attachment: fixed;
 }
 /* navbar */
 .navbar {
     border-radius: 0px 0px 16px 16px;
     background-color: rgba(0, 0, 139, 0.7);
     padding: 8px;
+    flex-wrap: wrap;
+}
+.nav-item-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 0px 4px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+.nav-item-custom:hover {
+    background-color: rgba(127, 127, 127, 0.2);
+}
+.nav-item-custom p {
+    color: white;
+    font-size: 20px;
+}
+.nav-item-custom .material-symbols-rounded {
+    font-size: 32px;
 }
 .btn-custom {
     background-color: darkblue;
@@ -16,6 +40,7 @@ body {
     font-weight: 600;
     transition: background-color 0.2s, color 0.2s;
     margin: 0px 4px;
+    padding: 8px;
     border-radius: 8px;
     border: 1px solid blue;
 }
@@ -41,7 +66,7 @@ body {
     font-size: 20px;
     color: green;
 }
-#login-form {
+#login-form, #register-form {
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.3);
     display: flex;
@@ -52,13 +77,13 @@ body {
     padding: 16px;
     transition: scale 0.2s;
 }
-#login-form:hover {
+#login-form:hover, #register-form:hover {
     scale: 1.025;
 }
-#login-form a {
+#login-form a, #register-form a {
     color: blue;
 }
-#login-form form {
+#login-form form, #register-form form {
     padding: 16px 0px;
     width: 100%;
 }
@@ -70,8 +95,15 @@ body {
     border: 0px;
     width: 100%;
     padding: 8px;
+    font-weight: 400;
     transition: background-color 0.2s;
 }
 .btn-custom-login:hover {
     background-color: rgba(0, 63, 127, 0.7);
+    color: white;
+}
+.transparent {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 32px;
+    border-radius: 16px;
 }
