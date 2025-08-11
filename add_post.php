@@ -19,7 +19,7 @@
         $connection->query("update posts set URL = \"$target_file\" where ID = \"$id\"");
         if (move_uploaded_file($_FILES["add_post_file"]["tmp_name"], $target_file)) {
             $_SESSION["toast_message"] = "Added Post Successfully";
-            header("Location: add_post.php");
+            header("Location: home.php");
         }
     }
     include("home_nav.php");

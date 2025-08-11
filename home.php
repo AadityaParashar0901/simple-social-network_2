@@ -22,7 +22,7 @@
         $description = $row["Description"];
         $url = $row["URL"];
         $username = $row["Username"];
-        $post = "<div class = 'card col-md-4'>".
+        $post = "<div class = 'card col-md-6'>".
             "<img class = 'card-img-top' src = '$url' alt = '$url'>".
             "<div class = 'card-body'>$description</div>".
             "<div class = 'card-footer'>$username</div></div>"; ?>
