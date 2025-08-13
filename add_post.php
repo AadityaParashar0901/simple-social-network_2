@@ -7,8 +7,6 @@
     if (!isset($_SESSION["login_status"]) || $_SESSION["login_status"] == "false") {
         header("Location: index.php");
     }
-?>
-<?php
     include("html_header.php");
     if (isset($_REQUEST["add_post_button"]) && $_REQUEST["add_post_button"] == "true") {
         $username = $_SESSION["login_username"];
