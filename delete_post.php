@@ -2,7 +2,7 @@
     include ("config.php");
     if (isset($_REQUEST["url"])) {
         $url = $_REQUEST["url"];
-        $result = $connection->query("delete from posts where URL = \"$url\";");
+        $result = $connection->query("delete from posts where URL = '$url';");
         if (file_exists($url) && $result === TRUE) {
             if (unlink($url)) {
                 $_SESSION["toast_message"] = "Post Deleted";

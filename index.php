@@ -7,8 +7,8 @@
     if (isset($_SESSION["login_status"]) && $_SESSION["login_status"] == "true") {
         header("Location: home.php");
     }
+    include("html_header.php");
 ?>
-<?php include("html_header.php"); ?>
         <nav class = "navbar navbar-expand d-flex justify-content-end">
             <ul class = "navbar-nav">
                 <li class = "nav-item">

@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Simple Social Network</title>
+        <title>Simple Social Network - 2</title>
         <link rel = "stylesheet" href = "style.css">
         <link rel = "stylesheet" href = "bootstrap/bootstrap.min.css">
         <script src = "bootstrap/bootstrap.bundle.min.js"></script>

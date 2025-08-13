@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $connection = mysqli_connect("localhost", "root", "", "social_network");
+    $connection = mysqli_connect("db.us-losa1.bengt.wasmernet.com:16751", "c13b46807ac0800005a4c3d7873c", "0689c13b-4680-7bf2-8000-895247d0312a", "simple_social_network");
     if (!$connection) die("Connection Failed: ".mysqli_connect_error());
     function console_log($msg) {
         echo "<script>console.log(\"$msg\")</script>";

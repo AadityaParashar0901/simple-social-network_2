@@ -13,7 +13,7 @@
         <div class = "container" style = "text-align: center" id = "posts_container"><div class = "row w-100" id = "posts_area"></div></div>
 <?php
     $username = $_SESSION["login_username"];
-    $result = $connection->query("select Description, Username, URL from posts where Username = \"$username\" order by ID desc limit 25;");
+    $result = $connection->query("select Description, Username, URL from posts where Username = '$username' order by ID desc limit 25;");
     if ($result->num_rows == 0) { ?>
         <script>
             document.getElementById("posts_container").innerHTML = "<i>No posts yet</i>";
