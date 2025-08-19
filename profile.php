@@ -10,6 +10,15 @@
     include("html_header.php");
     include("home_nav.php");
 ?>
+        <div class = "jumbotron container d-flex justify-content-evenly">
+            <span class = "material-symbols-rounded" style = "color: var(--background_color); font-size: 8rem;">account_circle</span>
+            <div class = "d-flex flex-column w-100" style = "justify-content: center; align-items: flex-start;">
+                <h1><?php echo $_SESSION["login_username"]; ?></h1>
+                <h6><?php echo $_SESSION["login_name"]; ?></h6>
+                <h6 class = "text-muted"><?php echo $_SESSION["login_email"]; ?></h6>
+                <p class = "text-muted"><?php echo $_SESSION["login_bio"]; ?></p>
+            </div>
+        </div>
         <div class = "container" style = "text-align: center" id = "posts_container"><div class = "row w-100" id = "posts_area"></div></div>
 <?php
     $username = $_SESSION["login_username"];
@@ -24,7 +33,7 @@
         $url = $row["URL"];
         $username = $row["Username"];
         $post = "<div class = 'card col-md-4'>".
-            "<img class = 'card-img-top' src = '$url' alt = '$url'>".
+            "<div class = 'h-100 d-flex justify-content-center align-items-center'><img class = 'card-img-top' src = '$url' alt = '$url'></div>".
             "<div class = 'card-body'>$description</div>".
             "<div class = 'card-footer w-100'>".
                 "<div class = 'd-flex justify-content-between'>".

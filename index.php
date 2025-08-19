@@ -9,6 +9,13 @@
     }
     include("html_header.php");
 ?>
+        <style>
+            body {
+                background-image: url('images/background.png');
+                background-position: center;
+                background-attachment: fixed;
+            }
+        </style>
         <nav class = "navbar navbar-expand d-flex justify-content-end">
             <ul class = "navbar-nav">
                 <li class = "nav-item">
@@ -42,7 +49,7 @@
                                 <button id = "login_button" name = "login_button" value = "true" type = "submit" class = "btn-custom-login">Sign In</button>
                             </div>
                         </form>
-                        <div class = "d-flex">Don't have any account yet?&nbsp;<a class = "nav-link" onClick = "showRegister();">Sign Up</a></div>
+                        <div class = "d-flex">Don't have any account yet?&nbsp;<a class = "nav-link" onClick = "showRegister();">Register</a></div>
                     </div>
                     <div class = "container-fluid me-2" id = "register-form">
                         <h1><center>Register</center></h1>
@@ -63,7 +70,7 @@
                                 <button id = "register_button" name = "register_button" value = "true" type = "submit" class = "btn-custom-login">Register</button>
                             </div>
                         </form>
-                        <div class = "d-flex">Already have an account?&nbsp;<a class = "nav-link" onClick = "showLogin();">Register</a></div>
+                        <div class = "d-flex">Already have an account?&nbsp;<a class = "nav-link" onClick = "showLogin();">Login</a></div>
                     </div>
                 </div>
             </div>

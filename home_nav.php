@@ -1,4 +1,4 @@
-        <nav class = "navbar navbar-expand-md justify-content-between">
+        <nav class = "navbar navbar-expand-md justify-content-between" style = "padding: 16px 8px;">
             <ul class = "navbar-nav">
                 <li class = "nav-item">
                     <a href = "profile.php" class = "nav-item-custom">
@@ -19,7 +19,7 @@
                     </a>
                 </li>
             </ul>
-            <h6 style = "color: white;"><?php echo $_SESSION["login_username"]; ?></h6>
+            <h6 style = "color: white; margin: 0 auto;"><?php echo $_SESSION["login_username"]; ?></h6>
             <ul class = "navbar-nav">
                 <li class = "nav-item">
                     <button type = "button" class = "btn-custom" data-bs-toggle = "modal" data-bs-target = "#logoutModal">Logout</button>
