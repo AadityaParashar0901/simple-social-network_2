@@ -43,12 +43,12 @@
                             <div class = "form-floating mb-5">
                                 <input type = "password" class = "form-control" id = "login_password" placeholder = "Enter Password" name = "login_password">
                                 <label for = "login_password">Password</label>
-                                <!-- <div class = "d-flex justify-content-end align-items-center"><a class = "nav-link" href = "#">Forgot Password?</a></div> -->
                             </div>
                             <div class = "d-flex justify-content-center align-items-center">
                                 <button id = "login_button" name = "login_button" value = "true" type = "submit" class = "btn-custom-login">Sign In</button>
                             </div>
                         </form>
+                        <div class = "d-flex">Forgot your password?&nbsp;<a class = "nav-link" onClick = "showForgotPassword();">Forgot Password</a></div>
                         <div class = "d-flex">Don't have any account yet?&nbsp;<a class = "nav-link" onClick = "showRegister();">Register</a></div>
                     </div>
                     <div class = "container-fluid me-2" id = "register-form">
@@ -71,6 +71,27 @@
                             </div>
                         </form>
                         <div class = "d-flex">Already have an account?&nbsp;<a class = "nav-link" onClick = "showLogin();">Login</a></div>
+                    </div>
+                    <div class = "container-fluid me-2" id = "forgot-password-form">
+                        <h1><center>Forgot Password</center></h1>
+                        <form action = "forgot_password.php" method = "post">
+                            <div class = "form-floating mt-3">
+                                <input type = "text" class = "form-control" id = "forgot_username" placeholder = "Enter Username" name = "forgot_username" required>
+                                <label for = "forgot_username">Username</label>
+                            </div>
+                            <div class = "form-floating mt-1 mb-1">
+                                <input type = "password" class = "form-control" id = "forgot_code" placeholder = "Enter Backup Code" name = "forgot_code" required>
+                                <label for = "forgot_code">Backup Code</label>
+                            </div>
+                            <div class = "form-floating mb-5">
+                                <input type = "password" class = "form-control" id = "forgot_password" placeholder = "Enter New Password" name = "forgot_password" required>
+                                <label for = "forgot_password">New Password</label>
+                            </div>
+                            <div class = "d-flex justify-content-center align-items-center">
+                                <button id = "forgot_button" name = "forgot_button" value = "true" type = "submit" class = "btn-custom-login">Submit</button>
+                            </div>
+                        </form>
+                        <div class = "d-flex">Remembered your password?&nbsp;<a class = "nav-link" onClick = "showLogin();">Login</a></div>
                     </div>
                 </div>
             </div>
@@ -112,5 +133,8 @@
                 </div>
             </div>
         </div>
-        <script>document.getElementById("register-form").style.display = "none";</script>
+        <script>
+            document.getElementById("register-form").style.display = "none";
+            document.getElementById("forgot-password-form").style.display = "none";
+        </script>
 <?php include("html_footer.php"); ?>

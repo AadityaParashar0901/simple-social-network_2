@@ -67,7 +67,7 @@
     font-size: 20px;
     color: green;
 }
-#login-form, #register-form {
+#login-form, #register-form, #forgot-password-form {
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.3);
     display: flex;
@@ -78,14 +78,14 @@
     padding: 16px;
     transition: scale 0.2s;
 }
-#login-form:hover, #register-form:hover {
+#login-form:hover, #register-form:hover, #forgot-password-form:hover {
     scale: 1.025;
 }
-#login-form a, #register-form a {
+#login-form a, #register-form a, #forgot-password-form a {
     color: var(--background_color_dark);
     cursor: pointer;
 }
-#login-form form, #register-form form {
+#login-form form, #register-form form, #forgot-password-form form {
     padding: 16px 0px;
     width: 100%;
 }

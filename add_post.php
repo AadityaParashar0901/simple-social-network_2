@@ -25,15 +25,15 @@
         <div class = "container">
             <div class = "mt-5 w-100 d-flex justify-content-center align-items-center flex-direction-column">
                 <div id = "post_area"></div>
-                <form action = "add_post.php" method = "post" enctype = "multipart/form-data" class = "w-75 transparent">
+                <form action = "add_post.php" method = "post" enctype = "multipart/form-data" class = "w-100 transparent">
                     <div class = "w-100 mb-3">
                         <input type = "file" class = "w-100 form-control" id = "add_post_file" name = "add_post_file" required>
                     </div>
-                    <div class = "w-100 form-floating">
+                    <div class = "w-100 form-floating mb-3">
                         <textarea class = "form-control" id = "add_post_description" name = "add_post_description" placeholder = "Enter Description" required></textarea>
                         <label for = "add_post_description">Description</label>
                     </div>
-                    <button type = "submit" class = "w-100 btn-custom d-flex justify-content-center" id = "add_post_button" name = "add_post_button" value = "true"><span>Add Post</span></button>
+                    <button type = "submit" class = "w-100 btn-custom d-flex justify-content-center" style = "margin: 0px;" id = "add_post_button" name = "add_post_button" value = "true"><span>Add Post</span></button>
                 </form>
             </div>
         </div>
