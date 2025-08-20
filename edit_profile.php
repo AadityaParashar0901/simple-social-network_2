@@ -4,7 +4,7 @@
         $name = $_REQUEST['edit_name'];
         $bio = $_REQUEST['edit_bio'];
         $username = $_SESSION['login_username'];
-        $query = "update users set Name = '$name', Bio = '$bio' where Username = '$username';"; $connection->query($query);
+        $query = "update users set Name = '$name', Bio = '$bio' where Username = '$username';"; $result = $connection->query($query);
         if ($result->num_rows > 0) {
             $_SESSION["login_name"] = $name;
             $_SESSION["login_bio"] = $bio;
