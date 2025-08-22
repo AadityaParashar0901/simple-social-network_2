@@ -12,7 +12,7 @@
                 <h5>Message</h5>
                 <button type = "button" class = "btn-close" style = "background-color: white;" data-bs-dismiss = "toast"></button>
             </div>
-            <div class = "toast-body" style = "font-size: 0.9rem;">
+            <div class = "toast-body" style = "font-size: 0.9rem; background-color: var(--background_color_light); color: var(--text_color);">
                 <?php echo $message; ?>
             </div>
         </div>

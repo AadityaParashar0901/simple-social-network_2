@@ -39,8 +39,8 @@
                         Logout?
                     </div>
                     <div class = "modal-footer">
-                        <button type = "button" class = "btn-custom" data-bs-dismiss = "modal" onClick = "logout();">Yes</button>
-                        <button type = "button" class = "btn-custom" data-bs-dismiss = "modal">No</button>
+                        <button type = "button" class = "btn-custom" style = "width: 48%;" data-bs-dismiss = "modal" onClick = "logout();">Yes</button>
+                        <button type = "button" class = "btn-custom" style = "width: 48%;" data-bs-dismiss = "modal">No</button>
                     </div>
                 </div>
             </div>

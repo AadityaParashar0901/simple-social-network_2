@@ -11,18 +11,18 @@
     include("home_nav.php");
 ?>
         <div class = "jumbotron container d-flex justify-content-evenly mb-3">
-            <span class = "material-symbols-rounded" style = "color: var(--background_color); font-size: 8rem;">account_circle</span>
+            <span class = "material-symbols-rounded" style = "color: var(--text_color); font-size: 8rem;">account_circle</span>
             <div class = "d-flex flex-column w-100" style = "justify-content: center; align-items: flex-start;">
                 <h1><?php echo $_SESSION["login_username"]; ?></h1>
                 <h6><?php echo $_SESSION["login_name"]; ?></h6>
-                <h6 class = "text-muted"><?php echo $_SESSION["login_email"]; ?></h6>
-                <p class = "text-muted"><?php if ($_SESSION["login_bio"] == "") echo "<i>Empty Bio</i>"; else echo $_SESSION["login_bio"]; ?></p>
+                <h6 class = "text-muted-custom"><?php echo $_SESSION["login_email"]; ?></h6>
+                <p class = "text-muted-custom"><?php if ($_SESSION["login_bio"] == "") echo "<i>Empty Bio</i>"; else echo $_SESSION["login_bio"]; ?></p>
             </div>
             <button class = "btn" style = "width: auto; height: 4rem;" data-bs-toggle = "modal" data-bs-target = "#editProfile">
-                <span class = "material-symbols-rounded" style = "color: var(--background_color);">edit</span>
+                <span class = "material-symbols-rounded" style = "color: var(--text_color);">edit</span>
             </button>
             <button class = "btn" style = "width: auto; height: 4rem;" data-bs-toggle = "modal" data-bs-target = "#showBackupCode">
-                <span class = "material-symbols-rounded" style = "color: var(--background_color);">passkey</span>
+                <span class = "material-symbols-rounded" style = "color: var(--text_color);">passkey</span>
             </button>
         </div>
         <div class = "container" style = "text-align: center" id = "posts_container"><div class = "row w-100" id = "posts_area"></div></div>

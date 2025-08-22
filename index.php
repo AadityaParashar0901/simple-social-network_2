@@ -14,9 +14,11 @@
                 background-image: url('images/background.png');
                 background-position: center;
                 background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
         </style>
-        <nav class = "navbar navbar-expand d-flex justify-content-end">
+        <nav class = "navbar navbar-expand d-flex justify-content-end" style = "background-color: #1e293b7f;">
             <ul class = "navbar-nav">
                 <li class = "nav-item">
                     <button type = "button" class = "btn-custom" data-bs-toggle = "modal" data-bs-target = "#contact_modal">Contact Us</a>

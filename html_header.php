@@ -12,4 +12,4 @@
             }
         </style>
     </head>
-    <body>
+    <body style = "background-color: var(--background_color); color: var(--text_color);">
