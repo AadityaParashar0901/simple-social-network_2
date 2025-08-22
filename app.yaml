@@ -5,3 +5,12 @@ package: '.'
 scaling:
   mode: single_concurrency
 kind: wasmer.io/App.v0
+volumes:
+  - name: simple-social-network-2_posts
+    mount: /posts
+    type: persistent
+    size: 1GiB
+    mount_options:
+      - "uid=1000"
+      - "gid=1000"
+      - "mode=0755"

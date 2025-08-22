@@ -2,6 +2,11 @@
     include ("config.php");
     if (isset($_REQUEST["url"])) {
         $url = $_REQUEST["url"];
+        if ($_SESSION["login_username"] != $_REQUEST["username"]) {
+            $_SESSION["toast_message"] = "You cannot delete other user's post";
+            header("Location: profile.php");
+            exit();
+        }
         $result = $connection->query("delete from posts where URL = '$url';");
         if (file_exists($url) && $result === TRUE) {
             if (unlink($url)) {
