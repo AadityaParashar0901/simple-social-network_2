@@ -55,6 +55,10 @@
                         <h1><center>Register</center></h1>
                         <form action = "register.php" method = "post">
                             <div class = "form-floating mt-3">
+                                <input type = "text" class = "form-control" id = "register_name" placeholder = "Enter Name" name = "register_name">
+                                <label for = "register_name">Name</label>
+                            </div>
+                            <div class = "form-floating mt-1 mb-1">
                                 <input type = "email" class = "form-control" id = "register_email" placeholder = "Enter E-Mail" name = "register_email">
                                 <label for = "register_email">E-Mail</label>
                             </div>

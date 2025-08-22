@@ -7,7 +7,6 @@
     if (!isset($_SESSION["login_status"]) || $_SESSION["login_status"] == "false") {
         header("Location: index.php");
     }
-    include("html_header.php");
     if (isset($_REQUEST["add_post_button"]) && $_REQUEST["add_post_button"] == "true") {
         $username = $_SESSION["login_username"];
         $description = $_REQUEST["add_post_description"];
@@ -20,6 +19,7 @@
             header("Location: home.php");
         }
     }
+    include("html_header.php");
     include("home_nav.php");
 ?>
         <div class = "container">

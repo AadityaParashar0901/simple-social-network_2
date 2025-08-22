@@ -16,7 +16,7 @@
                 <h1><?php echo $_SESSION["login_username"]; ?></h1>
                 <h6><?php echo $_SESSION["login_name"]; ?></h6>
                 <h6 class = "text-muted"><?php echo $_SESSION["login_email"]; ?></h6>
-                <p class = "text-muted"><?php echo $_SESSION["login_bio"]; ?></p>
+                <p class = "text-muted"><?php if ($_SESSION["login_bio"] == "") echo "<i>Empty Bio</i>"; else echo $_SESSION["login_bio"]; ?></p>
             </div>
             <button class = "btn" style = "width: auto; height: 4rem;" data-bs-toggle = "modal" data-bs-target = "#editProfile">
                 <span class = "material-symbols-rounded" style = "color: var(--background_color);">edit</span>
@@ -79,7 +79,7 @@
             "<div class = 'card-body'>$description</div>".
             "<div class = 'card-footer w-100'>".
                 "<div class = 'd-flex justify-content-between'>".
-                    "<span>$username</span><a href = 'delete_post.php?url=$url'><span class = 'material-symbols-rounded' style = 'color: red'>delete_forever</span></a>".
+                    "<span>$username</span><a href = 'delete_post.php?url=$url&username=$username'><span class = 'material-symbols-rounded' style = 'color: red'>delete_forever</span></a>".
                 "</div></div></div>"; ?>
         <script>
             document.getElementById("posts_area").innerHTML += "<?php echo $post; ?>";

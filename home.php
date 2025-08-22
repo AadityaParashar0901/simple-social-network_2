@@ -22,7 +22,7 @@
         $description = $row["Description"];
         $url = $row["URL"];
         $username = $row["Username"];
-        $post = "<div class = 'card' style = 'width: 45%; margin: 0px 2.5%'>".
+        $post = "<div class = 'card' style = 'width: 45%; margin: 0px 2.5%;'>".
             "<div class = 'h-100 d-flex justify-content-center align-items-center'><img class = 'card-img-top' src = '$url' alt = '$url'></div>".
             "<div class = 'card-body'>$description</div>".
             "<div class = 'card-footer'>$username</div></div>"; ?>
