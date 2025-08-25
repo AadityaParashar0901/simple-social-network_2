@@ -4,7 +4,7 @@
                     <span class = "material-symbols-rounded">menu</span>
                 </button>
                 <div class = "navbar-collapse collapse" id = "navbarControls">
-                    <ul class = "navbar-nav flex-row mt-3">
+                    <ul class = "navbar-nav flex-row mt-3 mb-3">
                         <li class = "nav-item">
                             <a href = "profile.php" class = "nav-item-custom">
                                 <span class = "material-symbols-rounded">account_circle</span>
@@ -25,7 +25,7 @@
                         </li>
                     </ul>
                     <h6 class = "text-white w-100 m-3 px-3"><center><?php echo $_SESSION["login_username"]; ?></center></h6>
-                    <ul class = "navbar-nav flex-row mb-3">
+                    <ul class = "navbar-nav flex-row mt-3 mb-3">
                         <li class = "nav-item">
                             <button type = "button" class = "btn-custom" data-bs-toggle = "modal" data-bs-target = "#logoutModal">Logout</button>
                         </li>

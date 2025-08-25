@@ -39,6 +39,9 @@
 .nav-item-custom .material-symbols-rounded {
     font-size: 32px;
 }
+.nav-link {
+    white-space: nowrap;
+}
 .btn-custom {
     background-color: var(--background_color_light);
     color: var(--text_color);
