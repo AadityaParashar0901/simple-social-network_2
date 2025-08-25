@@ -18,6 +18,16 @@
     padding: 8px;
     flex-wrap: wrap;
 }
+.collapsible-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .collapsible-navbar {
+        flex-direction: column;
+    }
+}
 .nav-item-custom {
     display: flex;
     justify-content: center;
