@@ -11,7 +11,7 @@
 ?>
         <style>
             body {
-                background-image: url('images/background.png');
+                background-image: url('images/background.webp');
                 background-position: center;
                 background-attachment: fixed;
                 background-repeat: no-repeat;
