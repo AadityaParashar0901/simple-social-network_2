@@ -31,9 +31,9 @@
         <div class = "d-flex align-items-center justify-content-center" style = "height: 90%">
             <div class = "container" id = "login-box">
                 <div class = "d-flex justify-content-around align-items-center" id = "info_login">
-                    <div class = "me-3" id = "info">
+                    <div class = "me-3 mb-3" id = "info">
                         <h1>Simple Social Network</h1>
-                        <i>where your voice becomes a vibe</i>
+                        <i class = "w-100"><center>where your voice becomes a vibe</center></i>
                     </div>
                     <div class = "container-fluid me-2" id = "login-form">
                         <h1><center>Sign In</center></h1>

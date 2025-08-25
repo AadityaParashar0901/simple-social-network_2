@@ -11,7 +11,7 @@
     include("home_nav.php");
 ?>
         <div class = "jumbotron container d-flex justify-content-evenly mb-3">
-            <span class = "material-symbols-rounded" style = "color: var(--text_color); font-size: 8rem;">account_circle</span>
+            <span class = "material-symbols-rounded" style = "color: var(--text_color); font-size: 6rem;">account_circle</span>
             <div class = "d-flex flex-column w-100" style = "justify-content: center; align-items: flex-start;">
                 <h1><?php echo $_SESSION["login_username"]; ?></h1>
                 <h6><?php echo $_SESSION["login_name"]; ?></h6>
@@ -25,7 +25,7 @@
                 <span class = "material-symbols-rounded" style = "color: var(--text_color);">passkey</span>
             </button>
         </div>
-        <div class = "container" style = "text-align: center" id = "posts_container"><div class = "row w-100" id = "posts_area"></div></div>
+        <div class = "container px-5" style = "text-align: center;" id = "posts_container"><div class = "row" id = "posts_area"></div></div>
         <div class = "modal" id = "editProfile">
             <div class = "modal-dialog modal-dialog-centered">
                 <div class = "modal-content">
@@ -74,7 +74,7 @@
         $description = $row["Description"];
         $url = $row["URL"];
         $username = $row["Username"];
-        $post = "<div class = 'card col-md-4'>".
+        $post = "<div class = 'card col-lg-4 mt-1 mb-1'>".
             "<div class = 'h-100 d-flex justify-content-center align-items-center'><img class = 'card-img-top' src = '$url' alt = '$url'></div>".
             "<div class = 'card-body'>$description</div>".
             "<div class = 'card-footer w-100'>".

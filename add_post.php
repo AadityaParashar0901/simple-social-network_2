@@ -25,7 +25,7 @@
         <div class = "container">
             <div class = "mt-5 w-100 d-flex justify-content-center align-items-center flex-direction-column">
                 <div id = "post_area"></div>
-                <form action = "add_post.php" method = "post" enctype = "multipart/form-data" class = "w-50 transparent d-flex justify-content-center align-items-center" style = "flex-direction: column;">
+                <form action = "add_post.php" method = "post" enctype = "multipart/form-data" class = "container transparent d-flex justify-content-center align-items-center" style = "flex-direction: column;">
                     <div class = "w-100 mb-3">
                         <input type = "file" class = "w-100 form-control" id = "add_post_file" name = "add_post_file" required>
                     </div>
